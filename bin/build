@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+ls -lah $CNB_BUILDPACK_DIR
+
+cat $CNB_BUILDPACK_DIR/buildpack.toml
+
+exit 0
