@@ -1,4 +1,15 @@
 #!/usr/bin/env bash
 # bin/detect <build-dir>
+
+set -euo pipefail
+
+echo "Detecting..."
+BUILDPACK_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+
+ls -lah $BUILDPACK_DIR
+cat $BUILDPACK_DIR/buildpack.toml
+
 echo 'heroku-pdftk-buildpack'
+
+
 exit 0
